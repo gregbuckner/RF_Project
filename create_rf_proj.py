@@ -63,10 +63,10 @@ def library_file_template():
     return library_file_template
 
 def init_file_template():
-    library_statement = "This is the initialization file for the %s Robot Framework project, put initialization information here"  % sys.argv[1].capitalize()
-    library_file_template = "#" * 140 + "\n" + "#" + '{:>139}'.format('#') + "\n" + "#" + '{:>139}'.format('#') + \
-    "\n" + "#" + '{:^138}'.format(library_statement) + '{:<}'.format('#') + \
+    init_statement = "This is the initialization file for the %s Robot Framework project, put initialization information here"  % sys.argv[1].capitalize()
+    init_file_template = "#" * 140 + "\n" + "#" + '{:>139}'.format('#') + "\n" + "#" + '{:>139}'.format('#') + \
+    "\n" + "#" + '{:^138}'.format(init_statement) + '{:<}'.format('#') + \
     "\n" + "#" + '{:>139}'.format('#') + "\n" + "#" + '{:>139}'.format('#') + "\n" + "#" * 140 
-    return library_file_template
+    return init_file_template
 
 create_rf_proj()        
